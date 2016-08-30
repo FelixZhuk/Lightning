@@ -14,8 +14,10 @@ void draw()
 	stroke((int)(Math.random() * 256),(int)(Math.random() * 256),(int)(Math.random() * 256));
 	while (endX < 300) {
 		endX = startX + (int)(Math.random() * 10);
-		endY = startY + (int)(Math.random() * 20) - 10;
+		endY = startY + (int)(Math.random() * 21) - 10;
 		line(startX,startY,endX,endY);
+		startX = endX;
+		startY = endY;
 	}
 }
 void mousePressed()
